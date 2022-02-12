@@ -2,78 +2,209 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Meliá Hotels International </title>
-    <!-- <link rel="stylesheet" href="estilos.css"> Aun no la hemos creado (Practica 3)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio</title>
+    <!--Path al CSS de Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shortcut icon" href="resources/melia.jpg" type="image/x-icon">
 </head>
 <body>
-    <header><!--Etiqueta que indica donde empieza y acaba el encabezado-->
+    <header>
         <div>
-            <img src="resources/logo.png" alt="logo Meliá" width=400 />
-        </div><br/>
-        <nav>
-            <ul>
-                <li><strong>Inicio</strong></li>
-                <li><a href="about.html">Sobre la empresa</a></li>
-                <li><a href="hotels.html">Sobre los hoteles</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+            <img class="my-3 mx-3" src="resources/logo.png" alt="logo Meliá" width=400 />
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #B3E6EC;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav p">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hotels.html">Sobre los hoteles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Sobre la empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light border-0 small" placeholder="¿Qué estás buscando...?"
+                               aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-light" >
+                                <i class="fas fa-search fa-sm"></i> Buscar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-group dropstart mx-4">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color=#E2E7E7">
+                        <li><a class="dropdown-item" href="#iniciar-sesion">Iniciar sesión</a></li>
+                        <li><a class="dropdown-item" href="#crear-cuenta">Crear cuenta</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header><br/><hr/><br/>
-    <section class="main">
-        <p align="justify"><b>Meliá Hotels International</b> es una de las compañías hoteleras más grandes del mundo y líder absoluto en España, que cuenta con <b>más de 375 hoteles</b> abiertos o en proceso de apertura en 43 países de cuatro continentes, que opera bajo las marcas <i>Gran Meliá Hotels & Resorts, Paradisus by Meliá, ME by Meliá, Meliá Hotels & Resorts, Innside by Meliá, Sol by Meliá y TRYP by Wyndham</i>. El foco estratégico en la expansión internacional le ha llevado a convertirse en la primera hotelera española <b>con presencia en China, EEUU o Emiratos Árabes</b>, además de mantener su liderazgo en mercados tradicionales como Europa, Latinoamérica o el Caribe. Junto a ello, destaca su diversificado modelo de negocio (siendo una de las principales hoteleras gestoras del mundo), su crecimiento apoyado en grandes alianzas estratégicas y su apuesta por el <b>turismo responsable</b>. Fruto de estas fortalezas, Meliá Hotels International es la compañía turística española con mayor reputación corporativa <b>(Ranking Merco)</b> y una de las más atractivas para trabajar a nivel internacional.</p>
-        <br/><p>
-            <blockquote> <!-- Con CSS quedara mejor (Practica 3)-->
-            "Leisure at heart, business in mind"
-            </blockquote>
-            <cite>Eslogan de Meliá Hotels International</cite>
-        </p><br/>
-        <h4>¡Hazte miembro de Meliá Hotels!</h4>
-        <form><!-- La funcionalidad de este formulario es con JavaScript (Practica 4)-->
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido"><br/><br/>
-            <label for="newuser">Usuario:</label>
-            <input type="text" id="newuser" name="username" requires>
-            <label for="pwd">Contraseña:</label>
-            <input type="password" id="newpassword" name="newpassword" maxlength="16" placeholder="Máximo 16 caracteres" required><br/><br/>
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required><br/><br/>
-            <label for="nacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="nacimiento" name="nacimiento" min="1940-1-1" max="2006-1-1"><br/><br/>
-            <input type="checkbox" id="terminos" name="terminos" value="Terminos">
-            <label for="terminos"> Acepto los términos y condiciones</label><br/>
-            <input type="checkbox" id="newsletter" name="newsletter" value="Newsletter">
-            <label for="newsletter">Quiero suscribirme a la <i>newsletter</i> para recibir información y ofertas</label><br/><br/>
-            <input type="submit" value="Crear cuenta" style="background-color:#0EC9DE;color:white">
-            <input type="reset" value="Borrar datos" style="background-color:#0EC9DE;color:white">
-        </form><br/>
-        <h4>...o inicia sesión en tu cuenta Meliá Hotels</h4>
-        <form>
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" autocomplete="on" required>
-            <label for="pwd">Contraseña:</label>
-            <input type="password" id="pwd" name="pwd" maxlength="16" autocomplete="on" required><br/><br/>
-            <input type="submit" value="Iniciar sesión" style="background-color:#0EC9DE;color:white">
-        </form><br/><br/><br/>
-        <table border="0" align="center" cellspacing="0" cellpadding="0">
-            <tr> <!--La idea es hacer que las imagenes vayan cambiando con CSS (Practica 3)-->
-                <td><img src="resources/hotel1.JPG" alt="Imagen hotel" width=375 /></td>
-                <td><img src="resources/hotel2.jpg" alt="Imagen habitacion" width=375 /></td>
-                <td><img src="resources/hotel3.JPG" alt="Imagen hotel" width=375 /></td>
-                <td><img src="resources/habitacion1.JPG" alt="Imagen habitacion" width=375></td>
-            </tr>
-        </table>
+    </header>
+    <div class="my-4 px-5">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><small>Meliá Hotels International</small></li>
+                <li class="breadcrumb-item active" aria-current="page"><small>Inicio</small></li>
+            </ol>
+        </nav>
+    </div>
+    <section class="info-inicio" id="info-inicio">
+        <div class="row align-content-center col-12 m-auto py-2 px-4">
+            <h4 class="display-6 p-3 pb-4">Sobre nosotros...</h4>
+            <p align="justify"><b>Meliá Hotels International</b> es una de las compañías hoteleras más grandes del mundo y líder absoluto en España, que cuenta con <b>más de 375 hoteles</b> abiertos o en proceso de apertura en 43 países de cuatro continentes, que opera bajo las marcas <i>Gran Meliá Hotels & Resorts, Paradisus by Meliá, ME by Meliá, Meliá Hotels & Resorts, Innside by Meliá, Sol by Meliá y TRYP by Wyndham</i>. El foco estratégico en la expansión internacional le ha llevado a convertirse en la primera hotelera española <b>con presencia en China, EEUU o Emiratos Árabes</b>, además de mantener su liderazgo en mercados tradicionales como Europa, Latinoamérica o el Caribe. Junto a ello, destaca su diversificado modelo de negocio (siendo una de las principales hoteleras gestoras del mundo), su crecimiento apoyado en grandes alianzas estratégicas y su apuesta por el <b>turismo responsable</b>. Fruto de estas fortalezas, Meliá Hotels International es la compañía turística española con mayor reputación corporativa <b>(Ranking Merco)</b> y una de las más atractivas para trabajar a nivel internacional.</p>
+            <div class="row eslogan py-4">
+                <img src="resources/eslogan.svg" class="rounded-pill d-block w-100" alt="Eslogan de la empresa">
+            </div>
+            <figcaption class="figure-caption text-left mx-4">Eslogan de Meliá Hotels International</figcaption>
+
+        </div>
     </section>
-    <footer> <!--Etiqueta que indica donde empieza y acaba el pie de pagina-->
-        <br/><br/><hr/>
-        <p>Contactar con Meliá Hotels International:</p>
-        <a href="mailto:myexperience@melia.com" title="Contactar con Meliá Hotels International">myexperience@melia.com</a>
-        <a target="_blank" href="https://twitter.com/meliahotelsint?lang=es" title="Ir al twitter de Meliá Hotels International">Twitter</a>
-        <a target="_blank" href="https://www.instagram.com/meliahtlresorts/?hl=es" title="Ir al instagram de Meliá Hotels International">Instagram</a>
-        <a target="_blank" href="https://www.linkedin.com/company/melia-hotels-international/?originalSubdomain=es" title="Ir al linkedin de Meliá Hotels International">Linkedin</a>
-        <a target="_blank" href="https://es-es.facebook.com/MeliaHotelsInternational/" title="Ir al facebook de Meliá Hotels International">Facebook</a>
+    <section class="crear-cuenta" id="crear-cuenta">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title display-6 mx-4 my-3 p-3">¡Hazte miembro de Meliá Hotels!</h4>
+                <form class="row justify-content-left g-3 mx-5 my-2">
+                    <div class="col-md-2">
+                        <label for="validationDefault01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="Sheldon" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="validationDefault02" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Cooper" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@gmail.com" required>
+                    </div>
+                </form>
+                <form class="row justify-content-left g-2 mx-5 my-2">
+                    <div class="col-md-2">
+                        <label for="validationDefaultUsername" class="form-label">Nombre de usuario</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputPassword6" class="col-form-label">Contraseña</label>
+                        <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" required>
+                        <span id="passwordHelp" class="form-text">Debe tener entre 8 y 16 caracteres</span>
+                    </div>
+                    <div class="col-12 py-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Aceptar los términos y condiciones
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 py-2">
+                        <button class="btn btn-outline-dark" type="submit" style="background-color:#B3E6EC">Crear cuenta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="iniciar-sesion" id="iniciar-sesion">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title display-6 mx-4 my-2 p-3">...o inicia sesión en tu cuenta Meliá Hotels</h4>
+                <form class="row justify-content-left g-2 mx-5 my-2">
+                    <div class="col-md-2">
+                        <label for="validationDefaultUsername" class="form-label">Nombre de usuario</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                            <input type="text" class="form-control" id="validationUsername"  aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputPassword6" class="col-form-label">Contraseña</label>
+                        <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpInline" required>
+                    </div>
+                    <div class="col-12 py-4 mb-3">
+                        <button class="btn btn-outline-dark" type="submit" style="background-color:#B3E6EC">Iniciar sesión</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="carouselInicio my-5" style="background-color: #E8F5F7">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade col-8 m-auto" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="resources/hotel1.JPG" class="d-block w-100" alt="Imagen hotel">
+                </div>
+                <div class="carousel-item">
+                    <img src="resources/hotel2.jpg" class="d-block w-100" alt="Imagen habitacion">
+                </div>
+                <div class="carousel-item">
+                    <img src="resources/hotel3.JPG" class="d-block w-100" alt="Imagen hotel">
+                </div>
+                <div class="carousel-item">
+                    <img src="resources/habitacion1.JPG" class="d-block w-100" alt="Imagen habitacion">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <footer class="text-center text-white" style="background-color:#B3E6EC">
+        <div class="container pt-4">
+            <section class="redes-sociales mb-4">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://es-es.facebook.com/MeliaHotelsInternational/" role="button" data-mdb-ripple-color="dark" title="Ir al facebook de Meliá Hotels International">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/meliahotelsint?lang=es" role="button" data-mdb-ripple-color="dark" title="Ir al twitter de Meliá Hotels International">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/meliahtlresorts/?hl=es" role="button" data-mdb-ripple-color="dark" title="Ir al instagram de Meliá Hotels International">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/company/melia-hotels-international/?originalSubdomain=es" role="button" data-mdb-ripple-color="dark" title="Ir al linkedin de Meliá Hotels International">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto:myexperience@melia.com" role="button" data-mdb-ripple-color="dark" title="Enviar un email a Meliá Hotels International">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center text-dark p-3" style="background-color:#FFFFFF">
+            © 2022 Copyright:
+            <a class="text-dark" href="https://github.com/alejandra-moreno"><small>Alejandra Moreno Grande</small></a>
+        </div>
     </footer>
+    <!--Path al JavaScript de Bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/12296ca4f2.js" crossorigin="anonymous"></script>
 </body>
 </html>

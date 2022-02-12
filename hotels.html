@@ -1,59 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sobre los hoteles</title>
-    <!-- <link rel="stylesheet" href="estilos.css"> Aun no la hemos creado (Practica 3)-->
+    <!--Path al CSS de Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shortcut icon" href="resources/melia.jpg" type="image/x-icon">
 </head>
 <body>
     <header>
         <div>
-            <img src="resources/logo.png" alt="logo Meliá" width=400/>
-        </div><br/>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Sobre la empresa</a></li>
-                <li><strong>Sobre los hoteles</strong></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+            <img class="my-3 mx-3" src="resources/logo.png" alt="logo Meliá" width=400 />
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #B3E6EC;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav p">
+                        <li class="nav-item">
+                            <a class="nav-link"  href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre los hoteles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Sobre la empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light border-0 small" placeholder="¿Qué estás buscando...?"
+                               aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-light" >
+                                <i class="fas fa-search fa-sm"></i> Buscar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-group dropstart mx-4">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color=#E2E7E7">
+                        <li><a class="dropdown-item" href="#iniciar-sesion">Iniciar sesión</a></li>
+                        <li><a class="dropdown-item" href="#crear-cuenta">Crear cuenta</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header><br/><hr/><br/>
-    <section class="main">
-        <h3>Medidas de seguridad durante la pandemia</h3>
-        <p align="justify">Junto con <a target="_blank" href="https://www.bureauveritas.es/newsroom/melia-hotels-international-certificacion-reapertura-covid-19">Bureau Veritas</a> se ha impulsado el programa <a target="_blank" href="https://www.youtube.com/hashtag/staysafewithmeli%C3%A1"><i>#StaySafeWithMeliá</i></a> en cumplimiento con los estándares más exigentes en materia de seguridad sanitaria sin renunciar a la excepcional experiencia de nuestros clientes.</p>
-        <iframe width="700" height="400"
-                src="https://www.youtube.com/embed/o5IbkfYj0TI" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen>
-        </iframe><br/><br/>
-        <p align="justify">Tras más de sesenta años en la industria hotelera, nuestra familia gestiona actualmente <b>más de 380 hoteles</b> en más de cuarenta países y cuatro continentes. Nuestro departamento de Expansión se encarga de consolidar la presencia de Meliá Hotels International en los mercados clave alrededor del mundo, dando a conocer nuestras marcas a escala internacional. Las <b>siete marcas</b> están posicionadas de manera estratégica para dirigirse a diferentes tipologías de clientes. Nuestra meta es fomentar un crecimiento sostenible y de calidad, creando relaciones a largo plazo junto a socios estratégicos. Nos gustaría invitarte a formar parte de nuestra familia.</p>
-        <br/>
-        <table border="2" bordercolor="	#47eac1" align="center" cellspacing="2" cellpadding="2">
-            <tr>
-                <td>Hoteles en Europa</td>
-                <td>Hoteles en América</td>
-                <td>Hoteles en Asia y Oceanía</td>
-                <td>Hoteles en África y Oriente Medio</td>
-            </tr>
-            <tr> <!-- Con CSS esta parte sera mas atractiva visualmente-->
-                <td><a target="_blank" href="https://www.melia.com/es/hoteles/alemania/berlin/melia-berlin/index.htm?esl-k=sem-google%7Cng%7Cc476272314419%7Cme%7Ckmelia%20berlin%7Cp%7Ct%7Cdc%7Ca53282490456%7Cg1097940462&gclid=Cj0KCQiAuvOPBhDXARIsAKzLQ8Gd9VbBYB540wdLP5ILG9aJ9LhocxSANNKiOCPfSG1zG8FgNTCfiF8aAkOBEALw_wcB&gclsrc=aw.ds">
-                    <img src="resources/europa.jpg" alt="Hotel Meliá en Berlín, Alemania" width=366 /><p><i>Hotel en Berlín, Alemania</i></p></a></td>
-                <td><a target="_blank" href="https://www.melia.com/es/hoteles/cuba/varadero/melia-varadero/index.htm">
-                    <img src="resources/america.webp" alt="Hotel Meliá en Varadero, Cuba" width=366 /><p><i>Hotel en Varadero, Cuba</i></p></a></td>
-                <td><a target="_blank" href="https://www.melia.com/es/hoteles/china/xian/gran-melia-xian/inde">
-                    <img src="resources/asia.JPG" alt="Hotel Meliá en Xian, China" width=366 /><p><i>Hotel en Xian, China</i></p></a></td>
-                <td><a target="_blank" href="https://www.melia.com/es/hoteles/tanzania/zanzibar/melia-zanzibar/index.htm">
-                    <img src="resources/africa.JPG" alt="Hotel Meliá en Zanzíbar, Tanzania" width=366 /><p><i>Hotel en Zanzíbar, Tanzania</i></p></a></td>
-            </tr>
-        </table>
+    </header>
+    <div class="my-4 px-5">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><small>Meliá Hotels International</small></li>
+                <li class="breadcrumb-item active" aria-current="page"><small>Sobre los hoteles</small></li>
+            </ol>
+        </nav>
+    </div>
+    <section class="info-covid" id="info-covid">
+        <div class="row align-content-center col-12 m-auto py-4 px-4">
+            <h6 class="display-6 p-3">Medidas de seguridad durante la pandemia</h6>
+            <p align="justify">Junto con <a target="_blank" href="https://www.bureauveritas.es/newsroom/melia-hotels-international-certificacion-reapertura-covid-19">Bureau Veritas</a>, impulsamos el programa <a target="_blank" href="https://www.youtube.com/hashtag/staysafewithmeli%C3%A1"><i>#StaySafeWithMeliá</i></a> cumpliendo con los estándares más exigentes de seguridad sanitaria sin renunciar a la excepcional experiencia de nuestros clientes.</p>
+            <div class="embed-responsive embed-responsive-16by9 text-center py-4">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o5IbkfYj0TI" width="700" height="400" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </section>
-    <footer><br/><br/><hr/>
-        <p>Contactar con Meliá Hotels International:</p>
-        <a href="mailto:myexperience@melia.com" title="Contactar con Meliá Hotels International">myexperience@melia.com</a>
-        <a target="_blank" href="https://twitter.com/meliahotelsint?lang=es" title="Ir al twitter de Meliá Hotels International">Twitter</a>
-        <a target="_blank" href="https://www.instagram.com/meliahtlresorts/?hl=es" title="Ir al instagram de Meliá Hotels International">Instagram</a>
-        <a target="_blank" href="https://www.linkedin.com/company/melia-hotels-international/?originalSubdomain=es" title="Ir al linkedin de Meliá Hotels International">Linkedin</a>
-        <a target="_blank" href="https://es-es.facebook.com/MeliaHotelsInternational/" title="Ir al facebook de Meliá Hotels International">Facebook</a>
+    <section class="info-hoteles" id="info-hoteles">
+        <div class="row align-content-center col-12 mb-4 px-4">
+            <p align="justify">Tras más de sesenta años en la industria hotelera, nuestra familia gestiona actualmente <b>más de 380 hoteles</b> en más de cuarenta países y cuatro continentes. Nuestro departamento de Expansión se encarga de consolidar la presencia de Meliá Hotels International en los mercados clave alrededor del mundo, dando a conocer nuestras marcas a escala internacional. Las <b>siete marcas</b> están posicionadas de manera estratégica para dirigirse a diferentes tipologías de clientes. Nuestra meta es fomentar un crecimiento sostenible y de calidad, creando relaciones a largo plazo junto a socios estratégicos. Nos gustaría invitarte a formar parte de nuestra familia.</p>
+        </div>
+    </section>
+    <div class="col-12">
+        <div class="accordion" id="myAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Hoteles en Europa</button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse">
+                    <div class="card-body row">
+                        <div class="col-6">
+                            <ul class="list-unstyled row p-1 mx-1">
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/alemania/home.htm">Alemania</a> (25)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/austria/home.htm">Austria</a> (1)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/bulgaria/home.htm">Bulgaria</a> (7)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/croacia/home.htm">Croacia</a> (13)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/espana/home.htm">España</a> (139)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/francia/home.htm">Francia</a> (7)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/grecia/home.htm">Grecia</a> (4)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/italia/home.htm">Italia</a> (5)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/luxemburgo/home.htm">Luxemburgo</a> (2)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/paises-bajos/home.htm">Países Bajos</a> (1)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/portugal/home.htm">Portugal</a> (9)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/reino-unido/home.htm">Reino Unido</a> (8)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/republica-checa/home.htm">República Checa</a> (1)</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <a target="_blank" href="https://www.melia.com/es/hoteles/alemania/berlin/melia-berlin/index.htm?esl-k=sem-google%7Cng%7Cc476272314419%7Cme%7Ckmelia%20berlin%7Cp%7Ct%7Cdc%7Ca53282490456%7Cg1097940462&gclid=Cj0KCQiAuvOPBhDXARIsAKzLQ8Gd9VbBYB540wdLP5ILG9aJ9LhocxSANNKiOCPfSG1zG8FgNTCfiF8aAkOBEALw_wcB&gclsrc=aw.ds">
+                                <img src="resources/europa.jpg" alt="Hotel Meliá en Berlín, Alemania" height=350 />
+                                <figcaption class="figure-caption text-left py-2">Hotel en Berlín, Alemania</figcaption>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Hoteles en América</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse show">
+                    <div class="card-body row">
+                        <div class="col-6">
+                            <a target="_blank" href="https://www.melia.com/es/hoteles/cuba/varadero/melia-varadero/index.htm">
+                                <img src="resources/america.webp" alt="Hotel Meliá en Varadero, Cuba" height=350 />
+                                <figcaption class="figure-caption text-left py-2">Hotel en Varadero, Cuba</figcaption>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled row p-1">
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/argentina/home.htm">Argentina</a> (3)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/bahamas/home.htm">Bahamas</a> (1)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/brasil/home.htm">Brasil</a> (12)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/colombia/home.htm">Colombia</a> (1)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/cuba/home.htm">Cuba</a> (40)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/estados-unidos/home.htm">Estados Unidos</a> (2)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/jamaica/home.htm">Jamaica</a> (1)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/mexico/home.htm">México</a> (8)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/panama/home.htm">Panamá</a> (1)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/peru/home.htm">Perú</a> (2)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/republica-dominicana/home.htm">República Dominicana</a> (8)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/venezuela/home.htm">Venezuela</a> (1)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">Hoteles en Asia y Oceanía</button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                    <div class="card-body row">
+                        <div class="col-6">
+                            <ul class="list-unstyled row p-1 mx-1">
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/china/home.htm">China</a> (6)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/indonesia/home.htm">Indonesia</a> (7)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/malasia/home.htm">Malasia</a> (1)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/myanmar/home.htm">Myanmar</a> (1)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/vietnam/home.htm">Vietnam</a> (10)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/tailandia/home.htm">Tailandia</a> (3)</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <a target="_blank" href="https://www.melia.com/es/hoteles/china/xian/gran-melia-xian/index.htm">
+                                <img src="resources/asia.JPG" alt="Hotel Meliá en Xian, China" height=350 />
+                                <figcaption class="figure-caption text-left py-2">Hotel en Xian, China</figcaption>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">Hoteles en África y Oriente Medio</button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse">
+                    <div class="card-body row">
+                        <div class="col-6">
+                            <a target="_blank" href="https://www.melia.com/es/hoteles/tanzania/zanzibar/melia-zanzibar/index.htm">
+                                <img src="resources/africa.JPG" alt="Hotel Meliá en Zanzíbar, Tanzania" height=350 />
+                                <figcaption class="figure-caption text-left py-2">Hotel en Zanzíbar, Tanzania</figcaption>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled row p-1">
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/cabo-verde/home.htm">Cabo Verde</a> (4)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/emiratos-arabes-unidos/home.htm">Emiratos Árabes Unidos</a> (2)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/marruecos/home.htm">Marruecos</a> (1)</li>
+                                <li class="list-item col-4  py-4">- Hotel en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/mozambique/home.htm">Mozambique</a> (1)</li>
+                                <li class="list-item col-4  py-4">- Hoteles en <a target="_blank" class="text-dark" href="https://www.melia.com/es/hoteles/tanzania/home.htm">Tanzania</a> (3)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="text-center text-white" style="background-color:#B3E6EC">
+        <div class="container pt-4">
+            <section class="redes-sociales mb-4">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://es-es.facebook.com/MeliaHotelsInternational/" role="button" data-mdb-ripple-color="dark" title="Ir al facebook de Meliá Hotels International">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/meliahotelsint?lang=es" role="button" data-mdb-ripple-color="dark" title="Ir al twitter de Meliá Hotels International">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/meliahtlresorts/?hl=es" role="button" data-mdb-ripple-color="dark" title="Ir al instagram de Meliá Hotels International">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/company/melia-hotels-international/?originalSubdomain=es" role="button" data-mdb-ripple-color="dark" title="Ir al linkedin de Meliá Hotels International">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto:myexperience@melia.com" role="button" data-mdb-ripple-color="dark" title="Enviar un email a Meliá Hotels International">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center text-dark p-3" style="background-color:#FFFFFF">
+            © 2022 Copyright:
+            <a class="text-dark" href="https://github.com/alejandra-moreno"><small>Alejandra Moreno Grande</small></a>
+        </div>
     </footer>
+    <!--Path al JavaScript de Bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/12296ca4f2.js" crossorigin="anonymous"></script>
 </body>
 </html>
