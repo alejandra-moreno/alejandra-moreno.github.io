@@ -5,7 +5,7 @@ En esta cuarta práctica de la asignatura de PAT, se ha mejorado el site desarro
 
 
 ## Novedades en la página web
-Todos los cambios incorporados en esta entrega se encuentran en la pantalla de "Inicio", es decir, en el fichero *index.html*.  En primer lugar, el usuario puede crear una cuenta rellenando el formulario y su información se guardará en Firebase:
+Todos los cambios incorporados en esta entrega se encuentran en la pantalla de "Inicio", es decir, en el fichero *index.html*.  En primer lugar, el usuario puede crear una cuenta rellenando el formulario y su información se guardará en Firebase. El código relacionado con esta función se encuentra en el fichero *auth.js*.
 
 ![Capture3](https://user-images.githubusercontent.com/71815685/155856379-27858f46-fed9-4c9b-be5b-5e02f511c3e5.JPG)
 
@@ -17,11 +17,11 @@ Si por el contrario el usuario ha realizado alguna de esas acciones, entonces el
 
 ![Capture2](https://user-images.githubusercontent.com/71815685/155856309-fdccf4e1-3160-48af-8570-1370af83538f.JPG)
 
-Por otro lado, en la página de inicio el usuario puede hacer uso de las dos APIs implementadas. La primera, cortesía de OpenWeatherMap, nos permite conocer el tiempo meteorológico actual de una ciudad introduciendo el nombre en la barra de búsqueda:
+Por otro lado, en la página de inicio el usuario puede hacer uso de las dos APIs implementadas. La primera, cortesía de OpenWeatherMap, nos permite conocer el tiempo meteorológico actual de una ciudad introduciendo el nombre en la barra de búsqueda. El código relacionado con esta API se encuentra en el fichero *weather.js*.
 
 ![Capture4](https://user-images.githubusercontent.com/71815685/155856430-d4142299-13c4-4f7f-b861-cf2d963127c5.JPG)
 
-La segunda, sacada de la página web Exchanges Rates API, permite al usuario realizar cambios de moneda introduciendo la cantidad y monedas deseadas:
+La segunda, sacada de la página web Exchanges Rates API, permite al usuario realizar cambios de moneda introduciendo la cantidad y monedas deseadas. El código relacionado con esta API se encuentra en el fichero *currency.js*.
 
 ![Capture5](https://user-images.githubusercontent.com/71815685/155856480-b820a4da-068b-432d-8fc5-9761ba723ca1.JPG)
 
